@@ -13,6 +13,7 @@
 		3477FE8C267A3272000BCA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3477FE8A267A3272000BCA35 /* Main.storyboard */; };
 		3477FE8E267A3272000BCA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3477FE8D267A3272000BCA35 /* Assets.xcassets */; };
 		3477FE91267A3272000BCA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3477FE8F267A3272000BCA35 /* LaunchScreen.storyboard */; };
+		3477FE9B267A3A14000BCA35 /* Anchorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3477FE9A267A3A14000BCA35 /* Anchorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3477FE9B267A3A14000BCA35 /* Anchorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +44,7 @@
 			children = (
 				3477FE83267A3272000BCA35 /* SheetTest */,
 				3477FE82267A3271000BCA35 /* Products */,
+				3477FE99267A3A14000BCA35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +70,13 @@
 			path = SheetTest;
 			sourceTree = "<group>";
 		};
+		3477FE99267A3A14000BCA35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = SheetTest;
+			packageProductDependencies = (
+				3477FE9A267A3A14000BCA35 /* Anchorage */,
+			);
 			productName = SheetTest;
 			productReference = 3477FE81267A3271000BCA35 /* SheetTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 3477FE78267A3271000BCA35;
+			packageReferences = (
+				3477FE98267A397A000BCA35 /* XCRemoteSwiftPackageReference "Anchorage" */,
+			);
 			productRefGroup = 3477FE82267A3271000BCA35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2SS9AYZ8LT;
@@ -304,6 +321,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dillon.mce.SheetTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2SS9AYZ8LT;
@@ -332,6 +351,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dillon.mce.SheetTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3477FE98267A397A000BCA35 /* XCRemoteSwiftPackageReference "Anchorage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Rightpoint/Anchorage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3477FE9A267A3A14000BCA35 /* Anchorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3477FE98267A397A000BCA35 /* XCRemoteSwiftPackageReference "Anchorage" */;
+			productName = Anchorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3477FE79267A3271000BCA35 /* Project object */;
 }
